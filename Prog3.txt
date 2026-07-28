@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h> 
+int main() {
+    char char1, char2;
+    int count;
+    printf("Enter first letter: ");
+    scanf(" %c", &char1);
+    printf("Enter second letter: ");
+    scanf(" %c", &char2);
+    count = abs(char1-char2) - 1;// absolute value
+    if (count < 0) {
+        count = 0;
+    }
+    printf("Number of characters between: %d\n", count);
+    return 0;
+}
