@@ -1,0 +1,16 @@
+#include <stdio.h>
+void convert(char str[]);
+int main() {
+    char text[] = "HELLO WORLD 2026!";//uppercase string
+    printf("Original: %s\n", text);
+    convert(text);//function call
+    printf("Lowercase: %s\n", text);
+    return 0;
+}
+void convert(char str[]) {
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] >= 'A' && str[i] <= 'Z') {//checking the conditions
+            str[i] = str[i] + 32;//converting to lower case by adding 32
+        }
+    }
+}
