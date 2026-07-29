@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    char input;
+    printf("Enter a character or an integer: ");
+    scanf("%c",&input);
+    if (input >='0'&&input<='9') {
+        printf("The input '%c' is an Integer.\n", input);
+    } else {
+        printf("The input '%c' is a Character.\n", input);
+    }
+    return 0;
+}
