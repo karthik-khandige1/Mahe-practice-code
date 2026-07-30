@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    int num1, num2, num3, num4, num5;
+    printf("First number:");
+    scanf("%d",&num1);
+    printf("Second number:");
+    scanf("%d",&num2);
+    printf("Third number:");
+    scanf("%d",&num3);
+    printf("Fourth number:");
+    scanf("%d",&num4);
+    printf("Fifth number:");
+    scanf("%d",&num5);
+    int sum = num1+num2+num3+num4+num5;
+    printf("The sum of the numbers is: %d\n", sum);
+    return 0;
+}
