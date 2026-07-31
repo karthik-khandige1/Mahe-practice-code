@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h> 
+int count_digit(long long number, int digit) {
+    int count = 0;
+    number = abs(number);
+    if (number==0&&digit==0) {
+        return 1;
+    }
+    while (number > 0) {
+        if (number%10==digit) {
+            count++;
+        }        number=number/10;
+    }
+    return count;
+}
+int main() {
+    long long num;
+    int dig;
+    printf("Enter a number: ");
+    scanf("%lld",&num);
+    printf("Enter the digit to count");
+    scanf("%d",&dig);
+    int result = count_digit(num, dig);
+    printf("The digit %d appears %d times in %lld.\n",dig,result,num);
+    return 0;
+}
